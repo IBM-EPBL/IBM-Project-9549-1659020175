@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container register">
+  <form action="/register" method="post">
+    <div class="form-group">
+      <label for="username">User Name:</label>
+      <input id="username" type="text" name="username" required="" class="form-control"/><br />
+      <label for="email">Email ID:</label>
+      <input id="email" type="email" name="email" required="" class="form-control"/><br />
+      <label for="phone">Phone Number:</label>
+      <input id="phone" type="tel" name="phone" required="" class="form-control"/><br />
+      <label for="pass">Password:</label>
+      <input id="pass" type="password" name="password"  class="form-control" required=""><br />
+      <p id="passMsg"></p>
+      <label for="cpass">Confirm Password:</label>
+      <input id="cpass" type="password" name="cpassword"  class="form-control" required=""/><br />
+      <p id="cpassMsg"></p>
+      <button type="submit" id="submit" class="btn btn-primary">Register</button>    </div>
+  </form>
+</div>
+{% endblock %}
