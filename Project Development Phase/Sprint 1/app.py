@@ -19,7 +19,7 @@ def sendemail(email,password):
 
 
 
-    sg = sendgrid.SendGridAPIClient(api_key="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")
+    sg = sendgrid.SendGridAPIClient(api_key="")
     from_email = Email("gb170216@gmail.com")  # Change to your verified sender
     to_email = To(str(email))  # Change to your recipient
     subject = "Sending with SendGrid is Fun"
