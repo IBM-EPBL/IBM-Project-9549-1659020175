@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div>
+    <div class="questionadd">
+        <div class="form-group">
+            
+            <form action="/addnews" method="post">
+                <label for="title">News Title:</label>
+                <input id="title" type="text" name="title" required="" class="form-control"/><br />
+                
+                <label for="content">News Content</label>
+                <textarea id="content" name="content" rows="10" cols="50" class="form-control textarea"></textarea> <br>
+                
+                <label for="date">News Date:</label>
+                <input id="date" type="date" name="date" required="" class="form-control"/><br />
+                
+                <label for="time">News Time:</label>
+                <input id="time" type="time" name="time" required="" class="form-control"/><br />
+                
+                <label for="genre">News Genre:</label>
+                <select class="form-select" aria-label="Default select example" id="genre" name="genre">
+                    <option selected>Genre</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Economics">Economics</option>
+                    <option value="International">International</option>
+                    <option value="National">National</option>
+                    <option value="Cinema">Cinema</option>
+                    <option value="State">State</option>
+                  </select>
+                  <br>
+
+                
+                <center><button type="submit" class="btn btn-primary">Add News</button></center> 
+            </form>
+        </div>
+    </div>
+</div>
+    
+
+{% endblock %}
